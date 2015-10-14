@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mi primer sitio web con django">
+    <meta name="author" content="javier Perez Ferrada">
+
+    <title>
+          {% block title %}{% endblock %}
+        </title>
+
+</head>
+
+<body>
+
+  <p>Bienvenido a mi sitio django</p>
+{% block content %}{% endblock %}
+   
+
+</body>
+
+</html>
