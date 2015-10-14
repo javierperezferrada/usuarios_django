@@ -4,12 +4,12 @@
  
     <table>
         <tr>
-            <td>{{ user.username.label_tag }}</td>
+            <td>Bienvenido</td>
             <td>{{ user.username }}</td>
         </tr>
  
         <tr>
-            <td>{{ user.email.label_tag }}</td>
+            <td>Tu correo registrado es:</td>
             <td>{{ user.email }}</td>
         </tr>
  
@@ -24,18 +24,18 @@
         </tr>
  
         <tr>
-            <td>{{ user.date_joined.label_tag }}</td>
+            <td>ingresado con fecha</td>
             <td>{{ user.date_joined }}</td>
         </tr>
  
         <tr>
-            <td>{{ user.last_login.label_tag }}</td>
+            <td>Ultimo ingreso al sistema</td>
             <td>{{ user.last_login }}</td>
         </tr>
  
     </table>
  
-    <a href="{% url 'logout' %}">Logout</a>
+    <a href="{% url 'logout' %}">Salir</a>
  
  
 {% endblock %}
